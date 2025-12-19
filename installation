@@ -1,6 +1,6 @@
-DOWNLOADER=aria2c conda create -n checkm2
-conda activate checkm2
-conda install checkm2
+DOWNLOADER=aria2c conda create -n checkm
+conda activate checkm
+conda install checkm
 
 # download database mannually due to cluster internet: https://data.ace.uq.edu.au/public/CheckM_databases/checkm_data_2015_01_16.tar.gz
 tar -zxvf checkm_data_2015_01_16.tar.gz -C checkm_db
