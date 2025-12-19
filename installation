@@ -6,6 +6,7 @@ conda install checkm
 tar -zxvf checkm_data_2015_01_16.tar.gz -C checkm_db
 
 #test run
+checkm test ~/checkm_test_result
 checkm lineage_wf -t 28 -x fa --tab_table ./ checkm_test
 
 checkm qa checkm_test/lineage.ms checkm_test -f completeness.tsv
