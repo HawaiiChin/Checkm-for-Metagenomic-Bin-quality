@@ -13,3 +13,5 @@ checkm qa checkm_test/lineage.ms checkm_test -f completeness.tsv
 
 awk -F'\t' '{print $1, $12, $13}' checkm_test/completeness.tsv
 
+# for running at phylum level and reduced marker genes
+checkm lineage_wf /gss1/home/zlcui/qinhuayu/metaanalysis/ checkm_phylum -x fa -t 28 --individual_markers --unique 3
